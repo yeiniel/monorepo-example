@@ -1,0 +1,27 @@
+service: todos-api
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    # this is required to overcome the yarn v2 shortcomings to deal with import
+    # statements within ESM modules.
+    useInProcess: true
+
+  webpack:
+    includeModules:
+      forceExclude:
+        - aws-sdk
+
+functions:
+  todos-api:
+    handler: handler.handler
+    events:
+      - httpApi: '*'
