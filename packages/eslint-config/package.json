@@ -1,0 +1,8 @@
+{
+  "name": "@yeiniel/eslint-config",
+  "private": true,
+  "main": "index.json",
+  "devDependencies": {
+    "@typescript-eslint/parser": "*"
+  }
+}

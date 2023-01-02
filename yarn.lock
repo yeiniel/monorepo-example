@@ -2809,6 +2809,14 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@yeiniel/eslint-config@workspace:*, @yeiniel/eslint-config@workspace:packages/eslint-config":
+  version: 0.0.0-use.local
+  resolution: "@yeiniel/eslint-config@workspace:packages/eslint-config"
+  dependencies:
+    "@typescript-eslint/parser": "npm:*"
+  languageName: unknown
+  linkType: soft
+
 "@yeiniel/monorepo-example@workspace:.":
   version: 0.0.0-use.local
   resolution: "@yeiniel/monorepo-example@workspace:."
@@ -2835,7 +2843,7 @@ __metadata:
     "@tsconfig/node16-strictest": "npm:^1.0.4"
     "@types/express": "npm:^4.17.15"
     "@typescript-eslint/eslint-plugin": "npm:*"
-    "@typescript-eslint/parser": "npm:*"
+    "@yeiniel/eslint-config": "workspace:*"
     "@yeiniel/todos-feature": "workspace:*"
     eslint: "npm:*"
     eslint-config-prettier: "npm:*"
@@ -2861,7 +2869,7 @@ __metadata:
     "@jest/globals": "npm:*"
     "@tsconfig/node16-strictest": "npm:^1.0.4"
     "@typescript-eslint/eslint-plugin": "npm:*"
-    "@typescript-eslint/parser": "npm:*"
+    "@yeiniel/eslint-config": "workspace:*"
     eslint: "npm:*"
     eslint-config-prettier: "npm:*"
     eslint-plugin-prettier: "npm:*"
