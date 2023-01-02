@@ -13,6 +13,6 @@ describe(handler.name, () => {
 
     // then
     expect(response.statusCode).toBe(200);
-    expect(response.body).toEqual(JSON.stringify({ message: "Hello World" }));
+    expect(response.body).toEqual(JSON.stringify({ data: [] }));
   });
 });

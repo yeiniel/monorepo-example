@@ -1,0 +1,21 @@
+{
+    "$schema": "https://turbo.build/schema.json",
+    "pipeline": {
+        "build": {
+            "outputs": [
+                ".serverless/**",
+                "lib/**"
+            ]
+        },
+        "lint": {
+            "outputs": []
+        },
+        "test": {
+            "outputs": []
+        },
+        "@yeiniel/todos-api#test": {
+            "dependsOn": ["@yeiniel/todos-feature#build"],
+            "outputs": []
+        }
+    }
+  }

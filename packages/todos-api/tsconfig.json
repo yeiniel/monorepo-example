@@ -2,5 +2,10 @@
   "extends": "@tsconfig/node16-strictest/tsconfig.json",
   "exclude": [
     "**/*.js"
+  ],
+  "references": [
+    {
+      "path": "../todos-feature"
+    }
   ]
 }

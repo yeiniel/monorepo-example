@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/node16-strictest/tsconfig.json",
+  "exclude": [
+    "lib/**/*.*"
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "lib"
+  }
+}
